@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Örnek Ödev</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="carousel.css" />
+  </head>
+  <script
+    src="https://kit.fontawesome.com/d497048b92.js"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <!--
+        Bir resim ve açıklaması ikiside ayrı değişkenlerde
+        4 tane resim tutucaz
+        4 tane dizimiz olucak
+        dizinin içinde ise resmin yolu ve resmin açıklaması olucak
+        2 tane buton olucak
+        arasında 4 tane geçiş numaraları olucak - numaralara link verilsin
+    -->
+
+    <div class="buttons">
+      <div class="left-button">
+        <button id="leftButton">Önceki</button>
+      </div>
+      <div class="links">
+        <button onclick="changeBlok(1)">1</button>
+        <button onclick="changeBlok(2)">2</button>
+        <button onclick="changeBlok(3)">3</button>
+        <button onclick="changeBlok(4)">4</button>
+      </div>
+      <div class="right-button">
+        <button id="rightButton">Sonraki</button>
+      </div>
+    </div>
+    <div class="photos">
+      <img id="image" src="1.jpg" alt="Resim 1" />
+    </div>
+    <div class="photos-explanation">
+      <span id="expSpan">Bu 1. resmin açıklamasıdır..</span>
+    </div>
+    <script src="carousel.js"></script>
+  </body>
+</html>
